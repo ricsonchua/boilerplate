@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=75",
+versioningit,
+"wheel"]
+build-backend = "setuptools.build_meta"
+
+###########
+#
+# Dependencies for Wheel to be recored in this section
+# version not required but should be update on every release
+# testing to be done on a separate environment
+#
+##########
+[project]
+name = "boilerplate"
+dynamic = ["version"]
+description = "Package boilerplate"
+dependencies = [
+    "polars"
+]
+readme = "README.md"
+requires-python = ">=3.10,<=3.15"
+authors = [{ name = "R.Chua" }]
+
+[tool.versioningit]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scripts*","helpers*"]
+
+
+##########
+# 
+# Entrypoints after installation in venv
+#
+##########
+[project.scripts]
+math-query = "scripts.entrypoint:main"
+text-query = "scripts.entrypoint:extend"
+frame-query = "helpers.output:fr_t"
+
