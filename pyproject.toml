@@ -23,7 +23,6 @@ readme = "README.md"
 requires-python = ">=3.10,<=3.15"
 authors = [{ name = "R.Chua" }]
 
-
 [tool.versioningit.format]
 # Format used when there are uncommitted changes on a clean tag
 dirty = "{base_version}+d{build_date:%Y%m%d%H%M%S}"
@@ -43,6 +42,6 @@ include = ["scripts*","helpers*"]
 ##########
 [project.scripts]
 math-query = "scripts.entrypoint:main"
-text-query = "scripts.entrypoint:extend"
+text-query = "scripts.entrypoint:ex"
 frame-query = "helpers.output:fr_t"
 
