@@ -23,7 +23,13 @@ readme = "README.md"
 requires-python = ">=3.10,<=3.15"
 authors = [{ name = "R.Chua" }]
 
-[tool.versioningit]
+
+[tool.versioningit.format]
+# Format used when there are uncommitted changes on a clean tag
+dirty = "{base_version}+d{build_date:%Y%m%d%H%M%S}"
+
+# Format used when there are both commits since the last tag AND uncommitted changes
+distance-dirty = "{base_version}.post{distance}+{vcs}{rev}.d{build_date:%Y%m%d%H%M%S}"
 
 [tool.setuptools.packages.find]
 where = ["."]

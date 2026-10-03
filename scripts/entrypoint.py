@@ -11,7 +11,7 @@ def main():
 	print(json.dumps({"sum": float(o1), "sub": float(o2)}))
 
 
-def extend():
+def ex():
 	p = argparse.ArgumentParser()
 	p.add_argument("--x", type=str, required=True)
 	p.add_argument("--y", type=str, required=True)
@@ -20,5 +20,5 @@ def extend():
 
 #Whatever is in the dunder will be executed with python -m 
 if __name__ == "__main__":
-    extend()
+    ex()
 
