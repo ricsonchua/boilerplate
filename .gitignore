@@ -3,6 +3,9 @@
 ### Python venv ignores
 bin/
 
+### VS code ignores
+*.code-workspace
+
 ### Python ignores
 # Byte-compiled / optimized / DLL files
 __pycache__/
