@@ -47,7 +47,7 @@ pip download --dest ./<directory> /path/to/your_package.whl
 
 Futures 
 
-1. Test integration of using aliased entrypoints with popular schedules. (eg. Airflow, crontab and etc)
+1. Test integration of using venv and aliased entrypoints with popular schedules. (eg. Airflow, crontab and etc)
 2. Consider creating Python venvs in shared group directories in production settings.
 3. Attempt to test setuptools-scm and refer to Git acthive bypass method to lower dependencies and package size.
 
